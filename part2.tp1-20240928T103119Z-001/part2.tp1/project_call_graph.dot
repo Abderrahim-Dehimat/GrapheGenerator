@@ -1,0 +1,25 @@
+digraph CallGraph {
+"computeTax" -> "getClass" [label="calls"];
+"computeTax" -> "getSimpleName" [label="calls"];
+"computeTax" -> "println" [label="calls"];
+"computeTax" -> "getPrice" [label="calls"];
+"visit" -> "computeTax" [label="calls"];
+"visit" -> "computeTax" [label="calls"];
+"visit" -> "computeTax" [label="calls"];
+"main" -> "asList" [label="calls"];
+"main" -> "println" [label="calls"];
+"main" -> "computeTaxForProducts" [label="calls"];
+"main" -> "println" [label="calls"];
+"main" -> "computeTaxForProducts" [label="calls"];
+"computeTaxForProducts" -> "accept" [label="calls"];
+"computeTaxForProducts" -> "getComputedTax" [label="calls"];
+"computeTaxForProducts" -> "println" [label="calls"];
+"accept" -> "visit" [label="calls"];
+"visit" -> "computeTax" [label="calls"];
+"visit" -> "computeTax" [label="calls"];
+"UnknownMethod" -> "setName" [label="calls"];
+"UnknownMethod" -> "setPrice" [label="calls"];
+"accept" -> "visit" [label="calls"];
+"accept" -> "visit" [label="calls"];
+}
+
